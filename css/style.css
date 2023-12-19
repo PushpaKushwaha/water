@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Laila:wght@400;500;700&display=swap');
+:root{
+    --brand:#65CEF5;
+    --secondary:#004DA1;
+    --w:#fff;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+   font-family: 'Laila', sans-serif;;
+}
+.top{
+    background: var(--secondary);
+    line-height: 50px;
+    color: var(--w);
+}
+.con{
+    max-width: 1240px;
+    margin: auto;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.grid{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    align-items: center;
+}
+.top ul{
+    display: flex;
+    gap: 20px;
+}
+.top i{
+    color: var(--brand);
+    padding: 3px;
+}
+.banner{
+    background: url(../img/bg.jpg);
+    background-size: cover;
+    height: calc(100vh - 50px);
+}
+header{
+    background: var(--w);
+    padding: 10px;
+    border-radius: 0 0 20px 20px;
+    border-bottom: 10px solid var(--brand);
+}
+nav ul{
+    display: flex;
+    gap: 20px;
+    font-weight: 600;
+}
+nav a{
+    color: #000;
+}
+.header-content{
+    padding: 40px 0;
+}
+.header-content h1{
+    color: var(--w);
+    font-family: laila;
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.header-content h1 span{
+    color: var(--brand);
+}
+.title{
+    max-width: 450px;
+    margin: auto;
+}
+.title h4{
+    color: var(--brand);
+}
+.title h2{
+    color: var(--secondary);
+    font-size: 29px;
+    font-style: normal;
+    font-weight: 700;
+}
+.Services{
+    text-align: center;
+    padding: 40px 0;
+}
+.sbox{
+    min-height: 408px;
+    background: url(../img/bg2.png) no-repeat;
+    background-size: 100%;
+    position: relative;
+    box-shadow: 1px 1px 3px #ccc;
+}
+.sbox-content{
+    position: absolute;
+    top: 100px;
+}
+.grid3{
+    margin: 50px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+footer{
+    background: var(--secondary);
+    color: var(--w);
+    padding: 40px 0 0 0;
+}
+.grid4{
+    display: grid;
+    grid-template-columns: 400px 1fr 1fr 1fr ;
+}
+.fbox h4{
+    padding-bottom: 20px;
+}
+.copyright{
+    background-color: var(--secondary);
+    color: var(--w);
+    line-height: 50px;
+    text-align: center;
+    border-top: 1px  solid #ccc;
+    margin-top: 20px;
+}
+nav span{
+    position: absolute;
+    font-size: 30px;
+    top: 10px;
+    right: 15px;
+    display: none;
+}
+
+@media(max-width:480px){
+    .grid,.grid3, .grid4{
+        display: block;
+    }
+    .con{
+        padding: 0 30px;
+    }
+    .top{
+        display: none;
+    }
+    nav span{
+        display: block;
+    }
+    nav ul{
+        display: none;
+    }
+}
+.n{
+    display: block !important;
+}
